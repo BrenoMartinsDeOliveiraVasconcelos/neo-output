@@ -20,7 +20,7 @@ public class Processor {
 				caracteresAnteriores.add((char) caractere);
 				
 				caractere++;
-			}while(caractere < letra);
+			}while(caractere <= letra);
 			
 			caracteres.add(caracteresAnteriores); //Adiciona na lista de listas
 		}
