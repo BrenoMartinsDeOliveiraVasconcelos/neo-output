@@ -3,7 +3,7 @@ package neo;
 import java.util.LinkedList;
 
 public class Output {
-	public static void output(LinkedList<LinkedList<Character>> lista) {
+	public static void output(LinkedList<LinkedList<Character>> lista){
 		LinkedList<Character> fim = new LinkedList<>();
 		
 		for (int indice1 = 0; indice1<lista.size(); indice1++) {
@@ -16,6 +16,11 @@ public class Output {
 				}
 				
 				System.out.print(lista.get(indice1).get(indice2)+"\n"); //printa o caractére
+				try {
+					Thread.sleep(10);
+				}catch (InterruptedException e){
+					System.out.print("Nao me acorda!!!!");
+				}
 			}
 			
 			fim.add(lista.get(indice1).getLast()); // O ultimo caractere da lista atual
